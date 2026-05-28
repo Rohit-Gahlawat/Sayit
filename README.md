@@ -5,8 +5,8 @@ A full-stack blogging platform inspired by Medium, built with modern web technol
 
 ## 🔗 Live Demo
 
-> Frontend: _Coming soon (Vercel)_  
-> Backend: _Coming soon_
+ https://medium-app-vite.vercel.app/  
+
 
 ---
 
