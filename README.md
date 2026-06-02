@@ -1,7 +1,7 @@
 
 # Medium Clone
 
-A full-stack blogging platform inspired by Medium, built with modern web technologies. Write, publish, and discover stories — with a clean, responsive UI and a serverless backend deployed at the edge.
+A blogging platform inspired by Medium, built with modern web technologies. Write, publish, and discover stories — with a clean, responsive UI and a serverless backend deployed at the edge.
 
 ## 🔗 Live Demo
 
