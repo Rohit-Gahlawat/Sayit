@@ -24,7 +24,7 @@ export const CreateBlog = () => {
             )
             navigate(`/blog/${res.data.id}`)
         } catch (e) {
-            alert("Error publishing blog")
+            alert("Error while publishing blog or you have not signedin yet")
         } finally {
             setPublishing(false)
         }

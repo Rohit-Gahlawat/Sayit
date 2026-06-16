@@ -4,6 +4,7 @@ import { withAccelerate } from '@prisma/extension-accelerate';
 import { PrismaClient } from '../generated/prisma/client';
 import { sign } from 'hono/jwt'
 import { signinInputSchema, signupInputSchema } from '@night-kernel/medium-app-common';
+import bcrypt from 'bcryptjs'
 
 
 type Bindings = {
@@ -31,12 +32,12 @@ userRouter.post('/signup', async (c) => {
     return c.json({ error: "Invalid Input" }, 400)
   }
   try {
+    const hashedPassword = await bcrypt.hash(parsed.data.password, 10)
     const newuser = await prisma.user.create({
       data: {
         name: parsed.data.name,
         email: parsed.data.email,
-        password: parsed.data.password
-
+        password: hashedPassword
       }
     });
     const token = await sign({ id: newuser.id }, c.env.JWT_SECRET)
@@ -62,14 +63,14 @@ userRouter.post('/signin', async (c) => {
   }
   try {
     const user = await prisma.user.findFirst({
-      where: {
-        email: parsed.data.email,
-        password: parsed.data.password
-      }
+      where: { email: parsed.data.email }
     })
     if (!user) {
-
       return c.json({ error: "user not found" }, 403)
+    }
+    const valid = await bcrypt.compare(parsed.data.password, user.password)
+    if (!valid) {
+      return c.json({ error: "invalid credentials" }, 403)
     }
     const token = await sign({ id: user.id }, c.env.JWT_SECRET);
     return c.json({ token, name: user.name || null })

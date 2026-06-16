@@ -87,7 +87,7 @@ blogRouter.put('/', async (c) => {
             error: "Invalid Inputs"
         })
     }
-    const update = prisma.blog.update({
+    const update = await prisma.blog.update({
         where: {
             id: body.id,
             authorId: userId
