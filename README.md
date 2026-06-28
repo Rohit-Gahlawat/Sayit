@@ -5,7 +5,7 @@ A blogging platform inspired by Sayit, built with modern web technologies. Write
 
 ## 🔗 Live Demo
 
-
+https://sayit-ruddy.vercel.app/signup
 
 
 ---
