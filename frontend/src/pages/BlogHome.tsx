@@ -42,7 +42,7 @@ export default function BlogHome() {
       {/* Nav */}
       <nav className="flex items-center justify-between px-4 sm:px-6 py-3 border-b border-gray-100">
         <div className="flex items-center gap-3 sm:gap-6">
-          <span className="text-xl sm:text-2xl font-semibold tracking-tight">Medium</span>
+          <span className="text-xl sm:text-2xl font-semibold tracking-tight">Sayit</span>
           {/* Tabs — hidden on mobile */}
           <div className="hidden sm:flex">
             {(["for-you", "following"] as const).map((tab) => (
@@ -135,7 +135,7 @@ export default function BlogHome() {
       <div className="bg-yellow-400 px-4 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between gap-3">
         <span className="text-xs sm:text-sm text-gray-900">
           <strong>Get unlimited access</strong>
-          <span className="hidden sm:inline"> to the best of Medium for less than $1/week.</span>
+          <span className="hidden sm:inline"> to the best of Sayit for less than $1/week.</span>
         </span>
         <span className="text-xs sm:text-sm font-semibold text-gray-900 underline cursor-pointer whitespace-nowrap">
           Become a member →

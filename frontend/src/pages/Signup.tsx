@@ -3,7 +3,7 @@ import { InputForm } from "../components/inputform";
 import Buttons from "../components/button";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import type { SignupType } from "@night-kernel/medium-app-common";
+import type { SignupType } from "@night-kernel/Sayit-app-common";
 import axios from "axios";
 import { BACKEND_URL } from "../config";
 import { useNavigate } from "react-router-dom";

@@ -2,8 +2,8 @@ import { PrismaClient } from '../generated/prisma/client';
 import { withAccelerate } from '@prisma/extension-accelerate';
 import { Hono } from "hono";
 import { verify } from 'hono/jwt';
-import { z } from "zod";
-import { createblogInputSchema, updateblogInputSchema } from '@night-kernel/medium-app-common';
+
+import { createblogInputSchema, updateblogInputSchema } from '@night-kernel/sayit-app-common';
 
 type Variables = {
     userId: string

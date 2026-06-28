@@ -45,7 +45,7 @@ export const CreateBlog = () => {
                         onClick={() => navigate("/bloghome")}
                         className="text-xl sm:text-2xl font-semibold tracking-tight cursor-pointer"
                     >
-                        Medium
+                        Sayit
                     </span>
                     <div className="hidden sm:flex items-center gap-2 text-sm text-gray-400">
                         <span>Draft</span>

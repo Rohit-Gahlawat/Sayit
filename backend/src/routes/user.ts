@@ -3,7 +3,7 @@ import { z } from "zod"
 import { withAccelerate } from '@prisma/extension-accelerate';
 import { PrismaClient } from '../generated/prisma/client';
 import { sign } from 'hono/jwt'
-import { signinInputSchema, signupInputSchema } from '@night-kernel/medium-app-common';
+import { signinInputSchema, signupInputSchema } from '@night-kernel/sayit-app-common';
 import bcrypt from 'bcryptjs'
 
 

@@ -51,7 +51,7 @@ export default function BlogPage() {
           className="text-lg sm:text-2xl font-semibold tracking-tight cursor-pointer whitespace-nowrap"
           onClick={() => navigate("/bloghome")}
         >
-          Medium
+          Sayit
         </span>
 
         <div className="flex items-center gap-1 sm:gap-3 flex-shrink-0">
@@ -156,7 +156,7 @@ export default function BlogPage() {
               <div className="border-t border-gray-100 mt-8 pt-8">
 
                 <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">
-                  More from Medium
+                  More from Sayit
                 </p>
 
                 <div className="space-y-4">

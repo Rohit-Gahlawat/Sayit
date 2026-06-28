@@ -1,6 +1,6 @@
 {
-  "name": "@night-kernel/medium-app-common",
-  "version": "1.0.1",
+  "name": "@night-kernel/sayit-app-common",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
   "scripts": {

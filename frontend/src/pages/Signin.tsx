@@ -2,7 +2,7 @@ import { QuoteSignin } from "../components/quotesignin";
 import { InputForm } from "../components/inputform";
 import Buttons from "../components/button";
 import { useState } from "react";
-import type { SigninType } from "@night-kernel/medium-app-common";
+import type { SigninType } from "@night-kernel/Sayit-app-common";
 import axios from "axios"
 import { BACKEND_URL } from "../config"
 import { useNavigate } from "react-router-dom";

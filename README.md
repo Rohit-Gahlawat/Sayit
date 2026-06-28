@@ -1,7 +1,7 @@
 
-# Medium Clone
+# Sayit
 
-A blogging platform inspired by Medium, built with modern web technologies. Write, publish, and discover stories with a clean, responsive UI and a serverless backend deployed at the edge.
+A blogging platform inspired by Sayit, built with modern web technologies. Write, publish, and discover stories with a clean, responsive UI and a serverless backend deployed at the edge.
 
 ## 🔗 Live Demo
 
@@ -16,7 +16,7 @@ A blogging platform inspired by Medium, built with modern web technologies. Writ
 - **Authentication** — Signup and signin with JWT-based auth
 - **Create Blogs** — Rich text editor to write and publish stories
 - **Blog Feed** — Home feed showing all published blogs with author info and read time
-- **Single Blog Page** — Full article view with author sidebar and "More from Medium" suggestions
+- **Single Blog Page** — Full article view with author sidebar and "More from Sayit" suggestions
 - **Input Validation** — Shared Zod schemas across frontend and backend via a custom npm package
 - **Connection Pooling** — Prisma Accelerate for edge-compatible, pooled database connections
 - **Fully Responsive** — Works seamlessly on mobile, tablet, and desktop
@@ -48,7 +48,7 @@ A blogging platform inspired by Medium, built with modern web technologies. Writ
 ### Shared
 | Technology | Purpose |
 |---|---|
-| `@night-kernel/medium-app-common` | Shared Zod schemas and TypeScript types across frontend and backend |
+| `@night-kernel/sayit-app-common` | Shared Zod schemas and TypeScript types across frontend and backend |
 
 ---
 
@@ -85,7 +85,7 @@ Migrations run separately using a direct database URL, bypassing the connection 
 
 ```bash
 git clone https://github.com/your-username/medium-app.git
-cd medium-app
+cd Sayit
 ```
 
 ### 2. Backend setup
@@ -172,10 +172,10 @@ Set via `wrangler secret put <NAME>` — only `DATABASE_URL` and `JWT_SECRET` ar
 
 ## 📦 Shared Package
 
-The `@night-kernel/medium-app-common` package contains shared Zod validation schemas and TypeScript types used by both the frontend and backend, ensuring consistent validation across the stack.
+The `@night-kernel/Sayit-app-common` package contains shared Zod validation schemas and TypeScript types used by both the frontend and backend, ensuring consistent validation across the stack.
 
 ```typescript
-import { signupInputSchema, SignupType } from "@night-kernel/medium-app-common"
+import { signupInputSchema, SignupType } from "@night-kernel/Sayit-app-common"
 ```
 
 ---
