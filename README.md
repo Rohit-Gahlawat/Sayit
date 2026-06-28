@@ -5,7 +5,7 @@ A blogging platform inspired by Sayit, built with modern web technologies. Write
 
 ## 🔗 Live Demo
 
- https://medium-app-vite.vercel.app/  
+
 
 
 ---
@@ -84,7 +84,7 @@ Migrations run separately using a direct database URL, bypassing the connection 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/medium-app.git
+git clone https://github.com/your-username/Sayit.git
 cd Sayit
 ```
 
